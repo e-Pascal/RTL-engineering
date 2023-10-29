@@ -8,4 +8,4 @@
 * [Конвейеризация](./Articles/Article_6/README.md)
 * [Пример применения математики в RTL](./Articles/Article_7/README.md)
 * [Определение производительности процессора с помощью CoreMark](./Articles/Article_8/README.md)
-
+* [Подключение внешнего редактора к Vivado](./Articles/Article_9/README.md)
