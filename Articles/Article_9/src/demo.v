@@ -221,8 +221,8 @@ module demo (
                              (row >= stick_border_hl_r) & (row <= (stick_border_hl_r + stick_height)) && (rom_data[11:0] != 12'hFFF);
 
         enemy_1_active 	  <= (col >= enemy_1_border_hl_c) & (col <= (enemy_1_border_hl_c + enemy_1_width)) & 
-                             (row >= enemy_1_border_hl_r) & (row <= (enemy_1_border_hl_r + enemy_1_height))& (|rom_ghost_data);
-									  
+                             (row >= enemy_1_border_hl_r) & (row <= (enemy_1_border_hl_r + enemy_1_height))& (rom_ghost_data[11:0] != 12'hFFF);
+
 		you_lose  <= (((stick_border_hl_c + stick_width >= enemy_1_border_hl_c) & 
 				     (stick_border_hl_c + stick_width <= enemy_1_border_hl_c + enemy_1_width)) |
 					 ((stick_border_hl_c <= enemy_1_border_hl_c + enemy_1_width)&
